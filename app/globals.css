@@ -2,32 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+* {
+    scrollbar-width: thin;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    /* ------------ Header ---------- */
+    .btn-header {
+        @apply hover:bg-[#e5e5e5] w-10 h-10 rounded-full inline-flex justify-center items-center
+    }
+    
+    /* -------------- Nav ------------- */
+    .tag-nav {
+        @apply inline-flex items-center w-[204px] h-10 px-3 hover:bg-[#f2f2f2] rounded-lg
+    }
+    .current-page {
+        @apply bg-[#f2f2f2] hover:bg-[#e5e5e5] font-medium
+    }
+
+    /* ------------ Content ----------- */
+    .btn-content {
+        @apply m-3 ml-0 px-3 h-8 inline-flex items-center bg-[#f2f2f2] rounded-lg font-medium hover:bg-[#e5e5e5] cursor-pointer
+    }
+    .current-change {
+        @apply bg-black text-white hover:bg-black
+    }
 }
