@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const Content = () => {
     return (
-        <div id='content' className="w-full h-full overflow-auto ml-65 mt-14 relative">
+        <section id='content' className="w-full h-full overflow-auto ml-65 mt-14 relative">
             {/* ---------- Filter ---------- */}
             <div className="flex px-1 bg-white w-full fixed top-14">
                 <p className="btn-content current-change">Tất cả</p>
@@ -20,6 +20,7 @@ const Content = () => {
             <div className="grid grid-cols-3 gap-4 pt-6 mr-4 mt-14 ml-1">
                 <Link href='/'>
                     <Image 
+                        priority
                         src={'https://kanbox.vn/wp-content/uploads/2023/02/nextjs-cover.jpg'}
                         width={400}
                         height={200}
@@ -46,6 +47,7 @@ const Content = () => {
                 </Link>
                 <Link href='/'>
                     <Image 
+                        priority
                         src={'https://kanbox.vn/wp-content/uploads/2023/02/nextjs-cover.jpg'}
                         width={400}
                         height={200}
@@ -72,6 +74,7 @@ const Content = () => {
                 </Link>
                 <Link href='/'>
                     <Image 
+                        priority
                         src={'https://kanbox.vn/wp-content/uploads/2023/02/nextjs-cover.jpg'}
                         width={400}
                         height={200}
@@ -98,6 +101,7 @@ const Content = () => {
                 </Link>
                 <Link href='/'>
                     <Image 
+                        priority
                         src={'https://kanbox.vn/wp-content/uploads/2023/02/nextjs-cover.jpg'}
                         width={400}
                         height={200}
@@ -124,6 +128,7 @@ const Content = () => {
                 </Link>
                 <Link href='/'>
                     <Image 
+                        priority
                         src={'https://kanbox.vn/wp-content/uploads/2023/02/nextjs-cover.jpg'}
                         width={400}
                         height={200}
@@ -150,6 +155,7 @@ const Content = () => {
                 </Link>
                 <Link href='/'>
                     <Image 
+                        priority
                         src={'https://kanbox.vn/wp-content/uploads/2023/02/nextjs-cover.jpg'}
                         width={400}
                         height={200}
@@ -176,6 +182,7 @@ const Content = () => {
                 </Link>
                 <Link href='/'>
                     <Image 
+                        priority
                         src={'https://kanbox.vn/wp-content/uploads/2023/02/nextjs-cover.jpg'}
                         width={400}
                         height={200}
@@ -202,6 +209,7 @@ const Content = () => {
                 </Link>
                 <Link href='/'>
                     <Image 
+                        priority
                         src={'https://kanbox.vn/wp-content/uploads/2023/02/nextjs-cover.jpg'}
                         width={400}
                         height={200}
@@ -228,6 +236,7 @@ const Content = () => {
                 </Link>
                 <Link href='/'>
                     <Image 
+                        priority
                         src={'https://kanbox.vn/wp-content/uploads/2023/02/nextjs-cover.jpg'}
                         width={400}
                         height={200}
@@ -254,6 +263,7 @@ const Content = () => {
                 </Link>
                 <Link href='/'>
                     <Image 
+                        priority
                         src={'https://kanbox.vn/wp-content/uploads/2023/02/nextjs-cover.jpg'}
                         width={400}
                         height={200}
@@ -280,6 +290,7 @@ const Content = () => {
                 </Link>
                 <Link href='/'>
                     <Image 
+                        priority
                         src={'https://kanbox.vn/wp-content/uploads/2023/02/nextjs-cover.jpg'}
                         width={400}
                         height={200}
@@ -306,6 +317,7 @@ const Content = () => {
                 </Link>
                 <Link href='/'>
                     <Image 
+                        priority
                         src={'https://kanbox.vn/wp-content/uploads/2023/02/nextjs-cover.jpg'}
                         width={400}
                         height={200}
@@ -332,7 +344,7 @@ const Content = () => {
                 </Link>
             </div>
 
-        </div>
+        </section>
     )
 }
 
